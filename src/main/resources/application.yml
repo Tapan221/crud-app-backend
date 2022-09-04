@@ -20,10 +20,11 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
+    generate-ddl: true
   mvc:
     throw-exception-if-no-handler-found: true
   resources:
