@@ -14,10 +14,10 @@ spring:
 #    password: Qwerty@12345
 #    username: root
   datasource:
-    url: jdbc:mysql://database-1.cogned1c1glo.ap-south-1.rds.amazonaws.com:3306/supportportal
+    url: jdbc:mysql://mydb.cogned1c1glo.ap-south-1.rds.amazonaws.com:3306/crudtest
     driverClassName: com.mysql.jdbc.Driver
     password: Qwerty12345
-    username: root
+    username: admin
   jpa:
     show-sql: true
     hibernate:
