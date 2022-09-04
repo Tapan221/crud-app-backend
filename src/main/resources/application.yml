@@ -15,6 +15,7 @@ spring:
 #    username: root
   datasource:
     url: jdbc:mysql://database-1.cogned1c1glo.ap-south-1.rds.amazonaws.com:3306/supportportal
+    driverClassName: com.mysql.jdbc.Driver
     password: Qwerty12345
     username: root
   jpa:
@@ -23,7 +24,7 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
+        dialect: org.hibernate.dialect.MySQL5Dialect
     generate-ddl: true
   mvc:
     throw-exception-if-no-handler-found: true
