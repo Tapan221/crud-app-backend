@@ -22,12 +22,12 @@ public class SupportportalApplication {
 	public BCryptPasswordEncoder bCryptPasswordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
-
+	
 	@Bean
 	public CorsFilter corsFilter() {
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		CorsConfiguration configuration = new CorsConfiguration();
-		configuration.setAllowedOrigins(Collections.singletonList("http://localhost:4200"));
+		configuration.setAllowedOrigins(Arrays.asList("*","http://localhost:4200/"));
 		configuration.setAllowCredentials(true);
 		configuration.setAllowedHeaders(Arrays.asList(
 				"Access-Control-Allow-Headers", 
@@ -44,10 +44,16 @@ public class SupportportalApplication {
 				"Cache-Control",
 				"Content-Type",
 				"Jwt-Token",
-				"Authorization"));
+				"Authorization",
+				"Access-Control-Allow-Headers", 
+				"Access-Control-Allow-Origin",
+				"Access-Control-Request-Method",
+				"Access-Control-Request-Headers"));
 		configuration.setAllowedMethods(Arrays.asList("DELETE", "GET", "POST", "PATCH", "PUT"));
 		
 		source.registerCorsConfiguration("/**", configuration);
 		return new CorsFilter(source);
 	}
+
+	
 }

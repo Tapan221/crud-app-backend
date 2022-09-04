@@ -8,11 +8,12 @@ server:
 #    whitelabel:
 #      enabled: false
 
-spring:
+#spring:
 #  datasource:
 #    url: jdbc:mysql://localhost:3306/supportportal
 #    password: Qwerty@12345
 #    username: root
+spring: 
   datasource:
     url: jdbc:mysql://mydb.cogned1c1glo.ap-south-1.rds.amazonaws.com:3306/crudtest
     driverClassName: com.mysql.jdbc.Driver
