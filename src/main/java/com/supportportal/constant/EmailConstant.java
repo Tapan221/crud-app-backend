@@ -4,9 +4,9 @@ public class EmailConstant {
 	public static final String SIMPLE_MAIL_TRANSFER_PROTOCOL="smtp";
 	public static final String USERNAME="tachary.44@gmail.com";
 	public static final String PASSWORD="ubsouzoflmxageoh";
-	public static final String FROM_EMAIL="support@tapansapp.com";
+	public static final String FROM_EMAIL="support@tapankumarachary.com";
 	public static final String CC_EMAIL="";
-	public static final String EMAIL_SUBJECT="TAPANS APP - New Password";
+	public static final String EMAIL_SUBJECT="CRUD SERVICE APP - New Password";
 	public static final String GMAIL_SMTP_SERVER="smtp.gmail.com";
 	public static final String SMTP_HOST="mail.smtp.host";
 	public static final String SMTP_AUTH="mail.smtp.auth";
