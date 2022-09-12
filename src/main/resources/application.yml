@@ -9,19 +9,19 @@ server:
 #      enabled: false
 
 #Local Test
-#spring:
-#  datasource:
-#    url: jdbc:mysql://localhost:3306/supportportal
-#    password: Qwerty@12345
-#    username: root
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/supportportal
+    password: Qwerty@12345
+    username: root
 
 #AWS
-spring: 
-  datasource:
-    url: jdbc:mysql://mydb.cogned1c1glo.ap-south-1.rds.amazonaws.com:3306/crudtest
-    driverClassName: com.mysql.cj.jdbc.Driver
-    password: Qwerty12345
-    username: admin
+#spring: 
+#  datasource:
+#    url: jdbc:mysql://mydb.cogned1c1glo.ap-south-1.rds.amazonaws.com:3306/crudtest
+#    driverClassName: com.mysql.cj.jdbc.Driver
+#    password: Qwerty12345
+#    username: admin
   
   jpa:
     show-sql: true

@@ -1,6 +1,7 @@
 package com.supportportal.resource;
 
 import com.supportportal.domain.HttpResponse;
+import com.supportportal.domain.PasswordReset;
 import com.supportportal.domain.User;
 import com.supportportal.domain.UserPrincipal;
 import com.supportportal.exception.ExceptionHandling;
@@ -106,6 +107,12 @@ public class UserResource extends ExceptionHandling {
     public ResponseEntity<HttpResponse> resetPassword(@PathVariable("email") String email) throws MessagingException, EmailNotFoundException {
         userService.resetPassword(email);
         return response(OK, EMAIL_SENT + email);
+    }
+    
+    @PostMapping("/passwordReset")
+    public ResponseEntity<HttpResponse> passwordRest(@RequestBody PasswordReset reset) throws MessagingException, EmailNotFoundException {
+        userService.passwordReset(reset.getEmail(),reset.getPassword());
+        return response(OK, EMAIL_SENT + reset.getEmail());
     }
 
     @DeleteMapping("/delete/{username}")
