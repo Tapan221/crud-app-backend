@@ -19,12 +19,12 @@ import com.supportportal.crudservice.service.StudentService;
 
 
 @RestController
-@RequestMapping("/studentsapi")
+@RequestMapping("/api")
 public class StudentController {
 	@Autowired
 	StudentService service;
 	
-	@PostMapping("/student")
+	@PostMapping("/addStudent")
 	public Student addStudentToDb(@RequestBody Student student) {
 		
 		return service.saveStudent(student);

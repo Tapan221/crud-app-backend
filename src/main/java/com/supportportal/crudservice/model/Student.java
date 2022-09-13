@@ -30,7 +30,7 @@ public class Student {
 	String fathersName;
 	String mothersName;
 	String currentClass;
-	String fathersContactNo;
-	String mothersContactNo;
-	Character sex;
+	double fathersContactNo;
+	double mothersContactNo;
+	char sex;
 }
